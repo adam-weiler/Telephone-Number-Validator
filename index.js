@@ -43,7 +43,7 @@ telephoneCheck("(555)5(55?)-5555"); //Returns false.
 	1       Is looking for 1.
 	\s?     ...Followed by an optional space.
 	?       The ? outside the brackets means the Capture Group is optional.
-          Altogether: Looks for the Country Code 1 at the very beginning. It is is optional.
+                Altogether: Looks for the Country Code 1 at the very beginning. It is is optional.
 	
 (\(\d{3}\)|\d{3})
 	(...)   Means a Capture Group.
@@ -52,28 +52,28 @@ telephoneCheck("(555)5(55?)-5555"); //Returns false.
 	\)      Is looking for last bracket.
 	|       An Or statement.
 	\d{3}   Is looking for exactly 3 digits.
-          Altogether: Looks for the 3-digit Area Code. Brackets are optional.
+                Altogether: Looks for the 3-digit Area Code. Brackets are optional.
 	
 [\s\-]?		
 	[...]   Match any character in this Set.
 	\s      Looks for one space.
 	\-      Looks for one dash.
 	?       This ? means the Set is optional.
-          Altogether: Looks for a dash or space after the Area Code. It is optional.
+                Altogether: Looks for a dash or space after the Area Code. It is optional.
 	
 \d{3}
 	\d{3}   Is looking for exactly 3 digits.
-          Altogether: Looks for the first 3 digits of the number.
+                Altogether: Looks for the first 3 digits of the number.
 	
 [\s\-]?		
 	[...]   Match any character in this set.
 	\s      Looks for one space.
 	\-      Looks for one dash.
 	?       This ? means the Set is optional.
-          Altogether: Looks for a dash or space after the Area Code. It is optional.
+                Altogether: Looks for a dash or space after the Area Code. It is optional.
 	
 \d{4}$
 	\d{4}   Is looking for exactly 4 digits.
 	$       Matches pattern at end of the string.
-          Altogether: Looks for the last 4 digits of the number at the very end.
+                Altogether: Looks for the last 4 digits of the number at the very end.
 */
